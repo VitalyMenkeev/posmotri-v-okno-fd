@@ -62,6 +62,8 @@ ol {
   gap: 30px;
 }
 
+/* мои стили */
+
 .search-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -238,4 +240,40 @@ ol {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+}
+
+.button {
+  background-color: #1B1919;
+  height: 34px;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  line-height: 100%;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: -3px
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: end;
+  justify-self: right;
+}
+
+.more-button {
+  width: 100%;
+  max-width: 390px;
 }
