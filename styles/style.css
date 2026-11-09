@@ -59,7 +59,6 @@ ol {
   display: flex;
   justify-content: center;
   align-items: end;
-  height: 534px;
   gap: 30px;
   width: 1140px;
 }
@@ -85,7 +84,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -100,14 +99,15 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 3px 0;
   height: 298px;
-  overflow-y: scroll;
+  padding: 3px 0;
+  overflow-y: auto;
 }
 
 .content__video-card {
   display: flex;
   align-items: start;
+  width: 390px;
 }
 
 .content__video-card:hover {
@@ -123,11 +123,12 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  width: 50%;
 }
 
 .search-form__fieldset-title {
   margin-bottom: 5px;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -194,14 +195,13 @@ ol {
 }
 
 .content__video-card-description {
-  display: -webkit-box;
   overflow: hidden;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  line-clamp: 1;
-  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .search-form__checkbox-list {
@@ -210,8 +210,8 @@ ol {
 }
 
 .search-form__fieldset {
-  border: none;
   align-self: center;
+  border: none;
 }
 
 .search-form__label {
@@ -233,7 +233,11 @@ ol {
   border-bottom: 1px solid #fff;
   border-left: none;
   color: #fff;
-  background-color: #1b1919;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  background-color: transparent;
   appearance: none;
 }
 
@@ -267,14 +271,14 @@ ol {
 
 .button {
   flex-shrink: 0;
-  height: 34px;
+  min-height: 34px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  background-color: #1b1919;
+  background-color: transparent;
 }
 
 .button:hover {
