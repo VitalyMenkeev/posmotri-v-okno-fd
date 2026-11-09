@@ -59,7 +59,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: end;
-  /* height: 534px; */
+  height: 534px;
   gap: 30px;
   width: 1140px;
 }
@@ -100,8 +100,8 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 534px;
   padding: 3px 0;
+  height: 298px;
   overflow-y: scroll;
 }
 
