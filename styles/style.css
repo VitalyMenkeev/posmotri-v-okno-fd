@@ -67,7 +67,7 @@ ol {
 .search-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: start;
+  gap: 40px;
 }
 
 .content__details {
@@ -211,6 +211,7 @@ ol {
 
 .search-form__fieldset {
   border: none;
+  align-self: center;
 }
 
 .search-form__label {
